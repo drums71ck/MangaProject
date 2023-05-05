@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: aquamarine;
+  }
+  img {
+    height: 700px;
+    width: 600px;
+  }
+  
+  .mangabox {
+    text-align: center;
+    background-color: antiquewhite;
+    place-items: center;
+    display: grid;
+    width: 60%;
+    margin-left: 20%;
+  
+  }
+  ul{
+    list-style: none;
+  }
+  header {
+    background-color: gray;
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
+    margin-bottom:20px;
+    padding: 10px;
+    margin: 0;
+    display: flex; 
+  }
+  h3{
+    margin-left: 10%;
+    margin-top: 5px;
+    font-size: 24px;
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
+  }

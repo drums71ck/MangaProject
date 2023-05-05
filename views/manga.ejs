@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= manga.titulo %>
+  </title>
+  <link rel="stylesheet" href="/css/manga.css">
+</head>
+
+<body>
+  
+  <header>
+    <h1>
+      <%= manga.titulo %>
+    </h1>
+    <h3><a href="/">Home</a></h3>
+  </header>
+  <div class="mangabox">
+    <img src="<%= manga.portada %>" alt="<%= manga.titulo %>">
+    <ul>
+      <% manga.capitulos.forEach(function(capitulo) { %>
+        <li>
+          <img src="<%= capitulo.portada_m %>" alt="" srcset="">
+          <ul>
+            <% capitulo.imagen.forEach(function(imagen) { %>
+              <li><img src="<%= imagen %>" alt=""></li>
+              <% }); %>
+          </ul>
+        </li>
+        <% }); %>
+    </ul>
+    <ul>
+  </div>
+</body>
+
+</html>
